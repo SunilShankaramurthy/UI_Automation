@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.032 s <<< FAILURE! - in TestSuite
+com.UI_Automation.runner.TestRunner.runScenario["Enter the mandatory details in the form", "Optional[Get the Request call Back]"](3)  Time elapsed: 104.22 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step "User enters the belows details in the Request Call back form "Sunil","shankaramurthy","msunil1@gmail.com","0740000000","4 PM","Conveyancing"" is undefined. You can implement it using the snippet(s) below:
+
+@When("User enters the belows details in the Request Call back form {string},{string},{string},{string},{string},{string}")
+public void user_enters_the_belows_details_in_the_request_call_back_form(String string, String string2, String string3, String string4, String string5, String string6) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" data-provider-thread-count="3" parallel="true">
+    <listeners>
+        <listener class-name="com.UI_Automation.Listeners.retry_mechanism.RetryTransform"/>
+    </listeners>
+    <test name="Test-class test">
+        <classes>
+         <class name="com.UI_Automation.runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>
