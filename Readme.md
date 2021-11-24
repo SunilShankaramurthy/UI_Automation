@@ -7,32 +7,32 @@
 - [Report](#report)
 
 ## Description
-   This project contains Inteigral-ott.net popcorn API verification and validation TestCases.
+   This project contains BDD automation with TestNG-Cucumber framework written in Java selenium using Page Object Model. This is a ready to use framework 
+built to achieve crossbrowser, parallel run and failed scenarios run. Users can add cucumber feature files and stepdefs directly.
 ## Architecture
-  This is a Maven project developed using Java RestAssured and TestNG.<br/>
-    - Maven take cares of dependency jars and plugins.<br/>
-    - Allows easy acessing methods to validate JSON Response.<br/> 
-    - Provides parallel run option.<br/>
-    - Provides access to produce user defined Test Reports.<br/>
-    - Update assertion values from properties files thus redusing change rquired to alter the code.<br/>
-    
+    This is a Maven project developed using Java Selenium and TestNG.
+- Maven take cares of dependency jars and plugins.
+- TestNG Provides parallel run option.
+- Selenium provides API's for WebEelements
+- Cucumber provides BDD approach
   
 ## PreRequisite
   Java 8
   
 ## Run-Command
   1. To run the Test on Non-Prod<br/>
-      mvn clean install -Denv=nonProd -Dsuite=PopcornAPI -DthreadCount=2 <br/>
+      mvn clean install -Denv=nonprod -DthreadCount=2 -DBrowser=chrome -Dtestng.dtd.http=true <br/>
       
   2.  To run the test on Pre-Prod<br/>
-      mvn clean install -Denv=PreProd -Dsuite=PopcornAPI -DthreadCount=2<br/>
+      mvn clean install -Denv=preprod -DthreadCount=2 -DBrowser=chrome -Dtestng.dtd.http=true<br/>
       
-      ** threadCount is used for parallel running. 
+      ** threadCount is used for parallel running. And we have to set this count in TestNG.xml file. As of now ThreadCount=3.
+      ** As of now this code will run only on Chrome with nonprod.
       
 ## Report
    The framework will generate 2 test reports<br/>
    1. TestNG ExtentReport <br/>
-      Path : project.dir/reports/Intigral-ott-popcorn-report.html<br/>
+      Path :project.dir/reports/ExtentReportResult.html<br/>
       <br/>
    2. TestNG default Report <br/>
       path : project.dir/target/surefire-reports/index.html
