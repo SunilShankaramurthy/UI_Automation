@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test-class Suite" duration-ms="109507" started-at="2021-11-24T10:37:42 IST" finished-at="2021-11-24T10:39:32 IST">
+  <suite name="Test-class Suite" duration-ms="68251" started-at="2021-11-24T23:20:03 IST" finished-at="2021-11-24T23:21:12 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test-class test" duration-ms="109507" started-at="2021-11-24T10:37:42 IST" finished-at="2021-11-24T10:39:32 IST">
+    <test name="Test-class test" duration-ms="68251" started-at="2021-11-24T23:20:03 IST" finished-at="2021-11-24T23:21:12 IST">
       <class name="com.UI_Automation.runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="setUpClass" is-config="true" duration-ms="819" started-at="2021-11-24T10:37:42 IST" finished-at="2021-11-24T10:37:43 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="setUpClass" is-config="true" duration-ms="883" started-at="2021-11-24T23:20:03 IST" finished-at="2021-11-24T23:20:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="83834" started-at="2021-11-24T10:37:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T10:39:07 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="58668" started-at="2021-11-24T23:20:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T23:21:03 IST">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,52 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'C02F9WE5Q6L4', ip: '2405:204:551d:dc9e:15eb:5897:6328:478d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b83256bd9ad37dc5f520809dc536f16]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'C02F9WE5Q6L4', ip: '2405:204:551d:dc9e:15eb:5897:6328:478d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b83256bd9ad37dc5f520809dc536f16
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+at com.UI_Automation.pages.Form_Details.form_details(Form_Details.java:43)
+at com.UI_Automation.stepdef.Request_call_back_stepdef.user_enters_the_below_details_in_the_request_call_back_form(Request_call_back_stepdef.java:32)
+at ✽.User enters the below details in the Request Call back form "Sunil","shankaramurthy","msunil1@gmail.com","0740000000","4 PM","Conveyancing"(file:///Users/sunilshankaramurthy/MyProjs/UI_Automation/features/Request_Call_Back3.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="104209" started-at="2021-11-24T10:37:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T10:39:27 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="57250" started-at="2021-11-24T23:20:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T23:21:02 IST">
           <params>
             <param index="0">
               <value>
@@ -90,7 +132,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="73510" started-at="2021-11-24T10:37:43 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T10:38:56 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="runScenario" duration-ms="59831" started-at="2021-11-24T23:20:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-24T23:21:04 IST">
           <params>
             <param index="0">
               <value>
@@ -106,7 +148,7 @@ at java.lang.Thread.run(Thread.java:748)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="tearDownClass" is-config="true" duration-ms="4438" started-at="2021-11-24T10:39:27 IST" finished-at="2021-11-24T10:39:32 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.UI_Automation.runner.TestRunner@3427b02d]" name="tearDownClass" is-config="true" duration-ms="7475" started-at="2021-11-24T23:21:04 IST" finished-at="2021-11-24T23:21:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

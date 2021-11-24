@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test-class test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 24 10:37:42 IST 2021</td>
+<td>Started on:</td><td>Wed Nov 24 23:20:03 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>109 seconds (109507 ms)</td>
+<tr><td>Total time:</td><td>68 seconds (68251 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -96,8 +96,8 @@ public void user_enters_the_belows_details_in_the_request_call_back_form(String 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363915618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace363915618'><pre>io.cucumber.testng.UndefinedStepException: The step &quot;User enters the belows details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;&quot; is undefined. You can implement it using the snippet(s) below:
+... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace240675611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace240675611'><pre>io.cucumber.testng.UndefinedStepException: The step &quot;User enters the belows details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;&quot; is undefined. You can implement it using the snippet(s) below:
 
 @When(&quot;User enters the belows details in the Request Call back form {string},{string},{string},{string},{string},{string}&quot;)
 public void user_enters_the_belows_details_in_the_request_call_back_form(String string, String string2, String string3, String string4, String string5, String string6) {
@@ -127,7 +127,65 @@ public void user_enters_the_belows_details_in_the_request_call_back_form(String 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>104</td>
+<td>57</td>
+<td>com.UI_Automation.runner.TestRunner@3427b02d</td></tr>
+<tr>
+<td title='com.UI_Automation.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.UI_Automation.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the mandatory details in the form", "Optional[Get the Request call Back]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;C02F9WE5Q6L4&apos;, ip: &apos;2405:204:551d:dc9e:15eb:5897:6328:478d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b83256bd9ad37dc5f520809dc536f16
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at com.UI_Automation.pages.Form_Details.form_details(Form_Details.java:43)
+	at com.UI_Automation.stepdef.Request_call_back_stepdef.user_enters_the_below_details_in_the_request_call_back_form(Request_call_back_stepdef.java:32)
+	at ✽.User enters the below details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;(file:///Users/sunilshankaramurthy/MyProjs/UI_Automation/features/Request_Call_Back3.feature:6)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace623470873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace623470873'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;C02F9WE5Q6L4&apos;, ip: &apos;2405:204:551d:dc9e:15eb:5897:6328:478d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b83256bd9ad37dc5f520809dc536f16
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
+	at com.UI_Automation.pages.Form_Details.form_details(Form_Details.java:43)
+	at com.UI_Automation.stepdef.Request_call_back_stepdef.user_enters_the_below_details_in_the_request_call_back_form(Request_call_back_stepdef.java:32)
+	at ✽.User enters the below details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;(file:///Users/sunilshankaramurthy/MyProjs/UI_Automation/features/Request_Call_Back3.feature:6)
+</pre></div></td>
+<td>58</td>
 <td>com.UI_Automation.runner.TestRunner@3427b02d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -140,12 +198,7 @@ public void user_enters_the_belows_details_in_the_request_call_back_form(String 
 <tr>
 <td title='com.UI_Automation.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.UI_Automation.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the mandatory details in the form", "Optional[Get the Request call Back]"</td>
 <td></td>
-<td>73</td>
-<td>com.UI_Automation.runner.TestRunner@3427b02d</td></tr>
-<tr>
-<td title='com.UI_Automation.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.UI_Automation.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the mandatory details in the form", "Optional[Get the Request call Back]"</td>
-<td></td>
-<td>83</td>
+<td>59</td>
 <td>com.UI_Automation.runner.TestRunner@3427b02d</td></tr>
 </table><p>
 </body>
