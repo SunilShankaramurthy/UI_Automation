@@ -30,9 +30,18 @@ built to achieve crossbrowser, parallel run and failed scenarios run. Users can 
       ** As of now this code will run only on Chrome with nonprod.
       
 ## Report
-   The framework will generate 2 test reports<br/>
-   1. TestNG ExtentReport <br/>
+   The framework will generate 4 types of test reports with screenshot and error details of failed scenarios.<br/>
+   1.  ExtentReport <br/>
       Path :project.dir/reports/ExtentReportResult.html<br/>
       <br/>
-   2. TestNG default Report <br/>
-      path : project.dir/target/surefire-reports/index.html
+      
+   2. Spark Report <br/>
+      Path :project.dir/test-output/spark/SparkReport.html<br/>
+      <br/>
+      
+   3. Extent pdf Report <br/>
+      Path :project.dir/test-output/PdfReport/ExtentPDFReport.pdf<br/>
+      <br/>
+      
+   4. Cucumber Report : This report provide screenshot for the failed scenarios<br/>
+      path : project.dir/target/cucumber-reports.html
