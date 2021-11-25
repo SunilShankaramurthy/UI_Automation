@@ -17,6 +17,11 @@ public class Hook{
 
     @Before(order=0)
     public void launchBrowser() throws InterruptedException {
+        System.out.println("***********************************************************************************");
+        System.out.println("**                                                                               **");
+        System.out.println("**               BDD-TestNG-Cucumber Automation test Started!!!             **");
+        System.out.println("**                                                                               **");
+        System.out.println("***********************************************************************************");
         DriverFactory driverFactory = new DriverFactory();
        driverFactory.setDriver("Chrome");
        driver=DriverFactory.getDriver();

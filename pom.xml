@@ -9,95 +9,79 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <testng.version>7.0.0</testng.version>
         <selenium-java.version>4.0.0</selenium-java.version>
-        <cucumber-java.version>7.0.0</cucumber-java.version>
-        <cucumber-testng.version>7.0.0</cucumber-testng.version>
-        <avenstack.version>5.0.6</avenstack.version>
-        <Testng.version>7.3.0</Testng.version>
+        <cucumber-java.version>6.7.0</cucumber-java.version>
+        <cucumber-testng.version>6.7.0</cucumber-testng.version>
+        <extentreports>5.0.8</extentreports>
+        <cucumber-extentsreport>3.1.1</cucumber-extentsreport>
+        <extentreports-cucumber6-adapter>2.8.4</extentreports-cucumber6-adapter>
+        <guava>24.1-jre</guava>
+
 
         <!--Plugins dependency version-->
         <maven-surfire.version>3.0.0-M5</maven-surfire.version>
+        <maven-compiler-plugin>3.8.1</maven-compiler-plugin>
+        <maven-resources-plugin>3.0.2</maven-resources-plugin>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.vimalselvam</groupId>
-            <artifactId>cucumber-extentsreport</artifactId>
-            <version>3.1.1</version>
-        </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>6.7.0</version>
+            <version>${cucumber-java.version}</version>
         </dependency>
+             <dependency>
+                 <groupId>io.cucumber</groupId>
+                 <artifactId>cucumber-testng</artifactId>
+                 <version>${cucumber-testng.version}</version>
+             </dependency>
 
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-core</artifactId>
-            <version>6.7.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>6.7.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.0.0</version>
-        </dependency>
+             <dependency>
+                 <groupId>org.seleniumhq.selenium</groupId>
+                 <artifactId>selenium-java</artifactId>
+                 <version>${selenium-java.version}</version>
+             </dependency>
 
 
-        <dependency>
-            <groupId>tech.grasshopper</groupId>
-            <artifactId>extentreports-cucumber6-adapter</artifactId>
-            <version>2.8.4</version>
-        </dependency>
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>4.1.5</version>
-        </dependency>
+             <dependency>
+                 <groupId>tech.grasshopper</groupId>
+                 <artifactId>extentreports-cucumber6-adapter</artifactId>
+                 <version>${extentreports-cucumber6-adapter}</version>
+             </dependency>
 
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>24.1-jre</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-support</artifactId>
-            <version>4.0.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.aventstack</groupId>
-            <artifactId>extentreports</artifactId>
-            <version>5.0.8</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin><groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${maven-surfire.version}</version>
-                    <configuration>
-                        <suiteXmlFiles>
-                            <!--suppress UnresolvedMavenProperty -->
+
+             <dependency>
+                 <groupId>com.google.guava</groupId>
+                 <artifactId>guava</artifactId>
+                 <version>${guava}</version>
+             </dependency>
+
+             <dependency>
+                 <groupId>com.aventstack</groupId>
+                 <artifactId>extentreports</artifactId>
+                 <version>${extentreports}</version>
+
+             </dependency>
+         </dependencies>
+         <build>
+             <pluginManagement>
+                 <plugins>
+                     <plugin><groupId>org.apache.maven.plugins</groupId>
+                         <artifactId>maven-compiler-plugin</artifactId>
+                         <version>${maven-compiler-plugin}</version>
+                         <configuration>
+                             <encoding>UTF-8</encoding>
+                             <source>1.8</source>
+                             <target>1.8</target>
+                         </configuration>
+                     </plugin>
+                     <plugin>
+                         <groupId>org.apache.maven.plugins</groupId>
+                         <artifactId>maven-surefire-plugin</artifactId>
+                         <version>${maven-surfire.version}</version>
+                         <configuration>
+                             <suiteXmlFiles>
+                                 <!--suppress UnresolvedMavenProperty -->
                             <suiteXmlFile>testng.xml</suiteXmlFile>
                              <!--<suiteXmlFile>${basedir}/target/surefire-reports/testng-failed.xml</suiteXmlFile>-->
                          </suiteXmlFiles>
@@ -119,7 +103,7 @@
 
 
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>${maven-resources-plugin}</version>
                     <executions>
                         <execution>
                             <id>copy-resources</id>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_class_Suite">
-              <span class="suite-name border-failed">Test-class Suite</span>
+              <span class="suite-name border-passed">Test-class Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_class_Suite" class="hide-methods failed suite-Test_class_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_class_Suite -->
-                      <a href="#" panel-name="suite-Test_class_Suite" class="show-methods failed suite-Test_class_Suite"> (show)</a> <!-- show-methods failed suite-Test_class_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Test_class_Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_class_Suite" title="com.UI_Automation.runner.TestRunner" hash-for-method="runScenario(&quot;Enter the mandatory details in the form&quot;, &quot;Optional[Get the Request call Back]&quot;)">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_class_Suite" title="com.UI_Automation.runner.TestRunner" hash-for-method="runScenario(&quot;Enter the mandatory details in the form&quot;, &quot;Optional[Get the Request call Back]&quot;)">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Test_class_Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -138,82 +119,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_class_Suite" class="panel Test_class_Suite">
-          <div class="suite-Test_class_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.UI_Automation.runner.TestRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Enter the mandatory details in the form&quot;, &quot;Optional[Get the Request call Back]&quot;)">
-                  </a> <!-- runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;C02F9WE5Q6L4&apos;, ip: &apos;2405:204:551d:dc9e:15eb:5897:6328:478d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b83256bd9ad37dc5f520809dc536f16
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
-	at com.UI_Automation.pages.Form_Details.form_details(Form_Details.java:43)
-	at com.UI_Automation.stepdef.Request_call_back_stepdef.user_enters_the_below_details_in_the_request_call_back_form(Request_call_back_stepdef.java:32)
-	at ✽.User enters the below details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;(file:///Users/sunilshankaramurthy/MyProjs/UI_Automation/features/Request_Call_Back3.feature:6)
-... Removed 4 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Enter the mandatory details in the form&quot;, &quot;Optional[Get the Request call Back]&quot;)">
-                  </a> <!-- runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &quot;User enters the belows details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User enters the belows details in the Request Call back form {string},{string},{string},{string},{string},{string}&quot;)
-public void user_enters_the_belows_details_in_the_request_call_back_form(String string, String string2, String string3, String string4, String string5, String string6) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:102)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_class_Suite-class-failed -->
           <div class="suite-Test_class_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -295,24 +200,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.UI_Automation.runner.TestRunner')
-data.setCell(0, 3, 59831);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'com.UI_Automation.runner.TestRunner')
-data.setCell(1, 3, 58668);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'com.UI_Automation.runner.TestRunner')
-data.setCell(2, 3, 57250);
+data.setCell(0, 3, 27540);
 window.suiteTableData['Test_class_Suite']= { tableData: data, tableDiv: 'times-div-Test_class_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Test_class_Suite">
               </div> <!-- times-div-Test_class_Suite -->
             </div> <!-- times-div -->
@@ -345,23 +242,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                <span class="method-start">898 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                <span class="method-start">898 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                <span class="method-start">898 ms</span>
+                <span class="method-start">1021 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">60760 ms</span>
+                <span class="method-start">28575 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

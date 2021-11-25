@@ -2,6 +2,7 @@ package com.UI_Automation.Listeners.extentReports;
 
 
 import com.UI_Automation.base.DriverFactory;
+import com.UI_Automation.stepdef.Hook;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -109,11 +110,7 @@ public class CustomReportListener extends DriverFactory implements EventListener
     // This event is triggered when Test Case is started
     // here we create the scenario node
     private void ScenarioStarted(TestCaseStarted event) {
-        System.out.println("***********************************************************************************");
-        System.out.println("**                                                                               **");
-        System.out.println("**               BDD-TestNG-Cucumber Automation test Started!!!             **");
-        System.out.println("**                                                                               **");
-        System.out.println("***********************************************************************************");
+
         String featureName = event.getTestCase().getUri().toString();
 
 
@@ -168,6 +165,13 @@ public class CustomReportListener extends DriverFactory implements EventListener
             step.log(Status.SKIP, "This step was skipped ");
         } else {
             step.log(Status.FAIL, "This failed");
+            System.out.println("***********************************************************************");
+            byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+
+          //  scenario.attach( screenshot,"image/png", "screenshot");
+           // scenario.addScreenCaptureFromBase64String(screenshot,"image/png", "screenshot");
+           // scenario.
         }
     };
     public String getScreenShot(){

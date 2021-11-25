@@ -9,56 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Test-class Suite</th></tr>
-<tr><td><a href="#t0">Test-class test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">68,251</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test-class test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">34,471</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test-class Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-class test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.UI_Automation.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1637776204817</td><td rowspan="2">58668</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Test-class test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.UI_Automation.runner.TestRunner</td><td><a href="#m2">runScenario</a></td><td rowspan="1">1637776204817</td><td rowspan="1">59831</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test-class Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-class test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.UI_Automation.runner.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1637827346282</td><td rowspan="1">27540</td></tr></tbody>
 </table>
-<h2>Test-class test</h2><h3 id="m0">com.UI_Automation.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Enter the mandatory details in the form&quot;</td><td>&quot;Optional[Get the Request call Back]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;C02F9WE5Q6L4&apos;, ip: &apos;2405:204:551d:dc9e:15eb:5897:6328:478d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_281&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b83256bd9ad37dc5f520809dc536f16
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.sendKeys(Unknown Source)
-	at com.UI_Automation.pages.Form_Details.form_details(Form_Details.java:43)
-	at com.UI_Automation.stepdef.Request_call_back_stepdef.user_enters_the_below_details_in_the_request_call_back_form(Request_call_back_stepdef.java:32)
-	at ✽.User enters the below details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;(file:///Users/sunilshankaramurthy/MyProjs/UI_Automation/features/Request_Call_Back3.feature:6)
-... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.UI_Automation.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Enter the mandatory details in the form&quot;</td><td>&quot;Optional[Get the Request call Back]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &quot;User enters the belows details in the Request Call back form &quot;Sunil&quot;,&quot;shankaramurthy&quot;,&quot;msunil1@gmail.com&quot;,&quot;0740000000&quot;,&quot;4 PM&quot;,&quot;Conveyancing&quot;&quot; is undefined. You can implement it using the snippet(s) below:
-
-@When(&quot;User enters the belows details in the Request Call back form {string},{string},{string},{string},{string},{string}&quot;)
-public void user_enters_the_belows_details_in_the_request_call_back_form(String string, String string2, String string3, String string4, String string5, String string6) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:102)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:117)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 9 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.UI_Automation.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Enter the mandatory details in the form&quot;</td><td>&quot;Optional[Get the Request call Back]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test-class test</h2><h3 id="m0">com.UI_Automation.runner.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Enter the mandatory details in the form&quot;</td><td>&quot;Optional[Get the Request call Back]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

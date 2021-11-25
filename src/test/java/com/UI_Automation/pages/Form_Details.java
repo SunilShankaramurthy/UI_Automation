@@ -38,10 +38,13 @@ public class Form_Details extends TestRunner {
     public void form_details (String firstName, String lastName, String
         emailaddress, String contactNumber, String timetocall, String reason) throws InterruptedException {
                // WebDriverWait wait = new WebDriverWait(driver,30);
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 FirstName.sendKeys(firstName);
 LastName.sendKeys(lastName);
 EmailAddress.sendKeys(emailaddress);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("window.scrollBy(0,350)","");
 PhoneNumber.sendKeys(contactNumber);
 BestTimeToCallYou.sendKeys(timetocall);
 //Select dropDown=new Select(wait.until(ExpectedConditions.presenceOfElementLocated(By.id("ReasonForEnquiry"))));

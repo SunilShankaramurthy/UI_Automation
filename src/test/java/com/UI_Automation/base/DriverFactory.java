@@ -2,6 +2,11 @@ package com.UI_Automation.base;
 
 import org.openqa.selenium.WebDriver;
 
+
+/*
+This class will set the WebDriver to run the test. It configured with Java Threadlocal
+in order to synchronise the parallel sessions created while running the test concurrently.
+ */
 public class DriverFactory {
    // public WebDriver driver;
 
@@ -19,6 +24,7 @@ public class DriverFactory {
         getDriver().manage().deleteAllCookies();
     }
 
+    // To close/ quite the WebDriver after the test.
     public void removeDriver(){
         System.out.println("In removeDriver"+Thread.currentThread().getId());
         localDriver.get().quit();

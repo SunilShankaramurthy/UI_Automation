@@ -1,25 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 70.908 s <<< FAILURE! - in TestSuite
-com.UI_Automation.runner.TestRunner.runScenario["Enter the mandatory details in the form", "Optional[Get the Request call Back]"](1)  Time elapsed: 57.375 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step "User enters the belows details in the Request Call back form "Sunil","shankaramurthy","msunil1@gmail.com","0740000000","4 PM","Conveyancing"" is undefined. You can implement it using the snippet(s) below:
-
-@When("User enters the belows details in the Request Call back form {string},{string},{string},{string},{string},{string}")
-public void user_enters_the_belows_details_in_the_request_call_back_form(String string, String string2, String string3, String string4, String string5, String string6) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-com.UI_Automation.runner.TestRunner.runScenario["Enter the mandatory details in the form", "Optional[Get the Request call Back]"](2)  Time elapsed: 58.793 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-invalid session id
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'C02F9WE5Q6L4', ip: '2405:204:551d:dc9e:15eb:5897:6328:478d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7b83256bd9ad37dc5f520809dc536f16, findElement {using=id, value=LastName}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.55, chrome: {chromedriverVersion: 95.0.4638.69 (6a1600ed572fe..., userDataDir: /var/folders/kd/r_dng39x60q...}, goog:chromeOptions: {debuggerAddress: localhost:57638}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:57638/devtoo..., se:cdpVersion: 96.0.4664.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b83256bd9ad37dc5f520809dc536f16
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 38.07 s - in TestSuite

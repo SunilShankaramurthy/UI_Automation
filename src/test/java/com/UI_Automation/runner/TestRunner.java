@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
                 "com.UI_Automation.Listeners.extentReports.CustomReportListener",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
                  },
-        features = "features/",
+        features = "features/Request_Call_Back.feature",
         glue= "com.UI_Automation.stepdef",
         monochrome=true
 )
