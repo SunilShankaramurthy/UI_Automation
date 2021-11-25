@@ -9,6 +9,13 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+/**
+* Hook file is created to take care of the things to perform before starting the test step and after compliting it.
+* LaunchBrowser() method initiates the driver depending on the browser provided in cmd.
+* teardown() method takes care of taking screenshot if scenario fails.
+* AfterScenario() method closes the browser once the testing is completed.
+ */
+
 
 public class Hook{
     private WebDriver driver;

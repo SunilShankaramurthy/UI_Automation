@@ -1,22 +1,19 @@
 package com.UI_Automation.pages;
 
 import com.UI_Automation.runner.TestRunner;
-import com.UI_Automation.utils.PropertyFile;
-//import com.sun.org.apache.bcel.internal.generic.Select;
+import com.UI_Automation.utils.PropertyFile;;
 import org.openqa.selenium.*;
-//import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.PageFactory;
-//import org.openqa.selenium.WebDriver;
-
 import java.time.Duration;
 
-
+/**
+This class contains page factory and selenium methods which are applied on home page.
+ */
 public class Form_Details extends TestRunner {
+
+    // Home page Page Objects defined.
     @FindBy(id="FirstName") private static WebElement FirstName;
     @FindBy(id="LastName") private static WebElement LastName;
     @FindBy(id="EmailAddress") private static WebElement EmailAddress;
@@ -26,18 +23,19 @@ public class Form_Details extends TestRunner {
 
 
     private WebDriver driver;
+    //Instance driver creation
     public Form_Details(WebDriver driver) {
         this.driver=driver;
     }
+    //To open the webpage
     public void openPage(){
         driver.get(PropertyFile.envFile().get("ServerUrl"));
         PageFactory.initElements(driver, Form_Details.class);
 
     }
-
+// To enter the form details in the home page
     public void form_details (String firstName, String lastName, String
         emailaddress, String contactNumber, String timetocall, String reason) throws InterruptedException {
-               // WebDriverWait wait = new WebDriverWait(driver,30);
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 FirstName.sendKeys(firstName);
 LastName.sendKeys(lastName);

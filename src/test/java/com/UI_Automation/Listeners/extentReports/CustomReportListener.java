@@ -46,7 +46,7 @@ public class CustomReportListener extends DriverFactory implements EventListener
         // TODO Auto-generated method stub
 
 
-        /*
+        /**
          * :: is method reference , so this::collecTag means collectTags method in
          * 'this' instance. Here we says runStarted method accepts or listens to
          * TestRunStarted event type
@@ -62,7 +62,7 @@ public class CustomReportListener extends DriverFactory implements EventListener
     };
 
 
-    /*
+    /**
      * Here we set argument type as TestRunStarted if you set anything else then the
      * corresponding register shows error as it doesn't have a listner method that
      * accepts the type specified in TestRunStarted.class
