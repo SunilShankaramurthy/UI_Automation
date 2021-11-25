@@ -35,6 +35,8 @@ built to achieve crossbrowser, parallel run and failed scenarios run. Users can 
       Path :project.dir/reports/ExtentReportResult.html<br/>
       <br/>
       
+      **The below reports provide screenshot with error details for the failed scenarios.
+      
    2. Spark Report <br/>
       Path :project.dir/test-output/spark/SparkReport.html<br/>
       <br/>
@@ -43,5 +45,5 @@ built to achieve crossbrowser, parallel run and failed scenarios run. Users can 
       Path :project.dir/test-output/PdfReport/ExtentPDFReport.pdf<br/>
       <br/>
       
-   4. Cucumber Report : This report provide screenshot for the failed scenarios<br/>
+   4. Cucumber Report : This report provide screenshot with error details for the failed scenarios<br/>
       path : project.dir/target/cucumber-reports.html
