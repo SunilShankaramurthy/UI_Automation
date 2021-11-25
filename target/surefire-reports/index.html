@@ -146,11 +146,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test-class Suite&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;3&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Test-class Suite&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;3&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.UI_Automation.Listeners.retry_mechanism.RetryTransform&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;Test-class test&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Test-class test&quot; parallel=&quot;methods&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.UI_Automation.runner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
@@ -204,12 +204,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.UI_Automation.runner.TestRunner')
-data.setCell(0, 3, 40347);
+data.setCell(0, 3, 27216);
 window.suiteTableData['Test_class_Suite']= { tableData: data, tableDiv: 'times-div-Test_class_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Test_class_Suite">
               </div> <!-- times-div-Test_class_Suite -->
             </div> <!-- times-div -->
@@ -242,11 +242,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Enter the mandatory details in the form", "Optional[Get the Request call Back]")</span>
-                <span class="method-start">1347 ms</span>
+                <span class="method-start">854 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">41708 ms</span>
+                <span class="method-start">28090 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

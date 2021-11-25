@@ -1,6 +1,6 @@
 Feature: Get the Request call Back
 
-  @Enter_Form_Details
+  @Enter_Form_Details @RegressionTest
   Scenario Outline: Enter the mandatory details in the form
     Given User is in Contact-us page
     When User enters the below details in the Request Call back form "<First Name>","<Last Name>","<Email Address>","<Mobile/landline number>","<Best time to call you>","<Reason for enquiry>"
