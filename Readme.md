@@ -18,16 +18,20 @@ built to achieve crossbrowser, parallel run and failed scenarios run. Users can 
   
 ## PreRequisite
   Java 8
+  chromedriver (version should be same as the system browser)
+  geekodriver(Firefox driver)( version should be same as the system browser)
   
 ## Run-Command
   1. To run the Test on Non-Prod<br/>
-      mvn clean install -Denv=nonprod -DthreadCount=2 -DBrowser=chrome -Dtestng.dtd.http=true <br/>
+      mvn clean install -Denv=nonprod -DBrowser=chrome -Dtestng.dtd.http=true <br/>
       
   2.  To run the test on Pre-Prod<br/>
-      mvn clean install -Denv=preprod -DthreadCount=2 -DBrowser=chrome -Dtestng.dtd.http=true<br/>
+      mvn clean install -Denv=preprod -DBrowser=chrome -Dtestng.dtd.http=true<br/>
       
       ** threadCount is used for parallel running. And we have to set this count in TestNG.xml file. As of now ThreadCount=3.
       ** As of now this code will run only on Chrome with nonprod.
+      ** If we don't provide the Browser value then by default chrome will be selected.
+      ** For parallel run with multi user, we can provide the threadcount value in TestNG.xml file present in project folder
       
 ## Report
    The framework will generate 4 types of test reports with screenshot and error details of failed scenarios.<br/>
