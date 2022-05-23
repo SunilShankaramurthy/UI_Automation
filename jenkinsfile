@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    stages {
+        stage('Cleaning Stage') {
+            steps {
+                   sh "mvn clean"
+            }
+        }
+        stage('Testing Stage') {
+            steps {
+                   sh "mvn test -Denv=nonprod -DBrowser=chrome -Dtestng.dtd.http=true"
+            }
+        }
+
+        stage('Result Stage') {
+                     steps {
+                            input("Do you want to capture the results?")
+                            junit'**/target/surefire-reports/TEST-*.xml'
+                            archive 'target/*.jar'
+                     }
+                }
+        stage(' Email stage'){
+                    steps{
+                            mail bcc: '', body: 'Test console logs from jenkins', cc: '', from: '', replyTo: '', subject: 'Test console logs from jenkins', to: 'sunilshankarmurthy1@gmail.com'
+                    }
+        }
+    }
+}
