@@ -7,8 +7,7 @@
 - [Report](#report)
 
 ## Description
-   This project contains BDD automation with TestNG-Cucumber framework written in Java selenium using Page Object Model. This is a ready to use framework 
-built to achieve crossbrowser, parallel run and failed scenarios run. Users can add cucumber feature files and stepdefs directly.
+   This project is created just to demonstrate the BDD automation framework skills with TestNG-Cucumber framework written in Java selenium using Page Object Model. This framework can be used for achieving crossbrowser, parallel run and failed scenarios run. Users can add cucumber feature files and stepdefs and can start writing the test.
 ## Architecture
     This is a Maven project developed using Java Selenium and TestNG.
 - Maven take cares of dependency jars and plugins.
@@ -18,7 +17,7 @@ built to achieve crossbrowser, parallel run and failed scenarios run. Users can 
   
 ## PreRequisite
   Java 8
-  chromedriver (version should be same as the system browser)
+  chromedriver (version should be same as the system browser version currently this project contains v101.)
   geekodriver(Firefox driver)( version should be same as the system browser)
   
 ## Run-Command
